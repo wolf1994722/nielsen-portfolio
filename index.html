@@ -1,0 +1,1249 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link rel="stylesheet" href="./assets/css/w3.css" />
+    <link rel="stylesheet" href="./assets/css/scrollBtn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/pricing.css" />
+    <link rel="stylesheet" href="./assets/css/cloud_stars.css" />
+    <link rel="stylesheet" href="./assets/css/pokermon.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- The main Three.js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+
+    <!-- This brings in the ability to load custom 3D objects in the .gltf file format. Blender allows the ability to export to this format out the box -->
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+  </head>
+  <body>
+    <canvas
+      class="background"
+      style="position: fixed !important; z-index: 1; pointer-events: none"
+    ></canvas>
+    <!-- Move to up bottom -->
+    <!-- <div class="scroll-button" style="display: none;">
+        <a onclick="navTo('home')"><i class="fa fa-arrow-up contact-title"></i></a>
+    </div> -->
+    <!-- navigation menu -->
+    <nav style="width: 100%; position: fixed; z-index: 300">
+      <div class="navbar">
+        <div class="logo"><a href="#">Credit is First!</a></div>
+        <ul class="menu" style="margin-bottom: 0px">
+          <li class="li"><a onclick="navTo('home')">Home</a></li>
+          <li class="li"><a onclick="navTo('about')">About</a></li>
+          <li class="li"><a onclick="navTo('skills')">Skills</a></li>
+          <li class="li"><a onclick="navTo('services')">Services</a></li>
+          <li class="li"><a onclick="navTo('prices')">Prices</a></li>
+          <li class="li"><a onclick="navTo('myworks')">Portfolio</a></li>
+          <li class="li"><a onclick="navTo('contact')">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fa fa-times"></i>
+          </div>
+        </ul>
+      </div>
+      <div class="menu-btn">
+        <i class="fa fa-bars" style="margin-top: 8px"></i>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="home"
+      id="home"
+      style="position: relative; z-index: 2; margin-top: 0px"
+    >
+      <div class="home-content">
+        <div>
+          <center>
+            <div class="text-two">
+              <div class="text-three">Welcome to Visite my Website!</div>
+              <br />
+              <h4 class="span loader">
+                <span class="m">W</span>
+                <span class="m">e</span>
+                <span class="m">b</span>
+                <span class="m">&nbsp;</span>
+                <span class="m">&</span>
+                <span class="m">&nbsp;</span>
+                <span class="m">A</span>
+                <span class="m">p</span>
+                <span class="m">p</span>
+                <span class="m">&nbsp;</span>
+                <span class="m">F</span>
+                <span class="m">u</span>
+                <span class="m">l</span>
+                <span class="m">l</span>
+                <span class="m">-</span>
+                <span class="m">S</span>
+                <span class="m">t</span>
+                <span class="m">a</span>
+                <span class="m">c</span>
+                <span class="m">k</span>
+                <span class="m">&nbsp;</span>
+                <span class="m">D</span>
+                <span class="m">e</span>
+                <span class="m">v</span>
+                <span class="m">e</span>
+                <span class="m">l</span>
+                <span class="m">o</span>
+                <span class="m">p</span>
+                <span class="m">e</span>
+                <span class="m">r</span>
+              </h4>
+              <br />
+            </div>
+            <div class="text-four">
+              AI | Mern | Django | Laravel | PHP | WordPress | Blackchain | C# |
+              Java | QT | C++
+            </div>
+            <p>
+              Whatever you do, work at it with all your heart, as working for
+              the Lord, not for human masters!
+            </p>
+          </center>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <br /><br />
+    <div
+      class="w3-container w3-padding-large"
+      style="position: relative; z-index: 2"
+    >
+      <div id="about" style="margin-top: -100px; height: 170px"></div>
+      <div
+        class="w3-col l5"
+        style="display: flex; justify-content: center; opacity: 0.9"
+      >
+        <img
+          data-src="./assets/images/me.png"
+          class="lazy"
+          style="height: auto; width: 350px; margin: 10px"
+        />
+      </div>
+      <div class="w3-col l7 description">
+        <h3>
+          A full stack developer who has got deep experience of web design,
+          <br />
+          Solution-drive Full-Stack Engineer with over 9 years of work
+          experience building consumer-focused online products and services.<br />
+          Designed and developed web apps across multiple APIs, third-party
+          integrations, and databases.<br />
+          Always make sure of the quick turnaround of my job as <br />
+          I never disappoint any of my clients.<br />
+          Expert enough to manage any kind of job environment <br />
+          by coming up with my multitasking expertise.<br />
+          Always try to learn new things and update the previous knowledge.
+          <br />
+          Confident to carry the tasks efficiently and accurately.<br />
+          Committed to the clients and always focus on their respectable
+          needs.<br />
+          Work with 100% client's satisfaction.
+        </h3>
+      </div>
+    </div>
+    <br /><br />
+    <!-- My Skill Section -->
+    <!-- <h1 id="myskills" class="subtitle"> My Skills & Services </h1> -->
+    <section
+      class="skills"
+      style="padding-top: 0px; position: relative; z-index: 2"
+    >
+      <div id="skills" style="margin-top: -100px; height: 100px"></div>
+      <section class="skills-bounce">
+        <div class="content">
+          <h2>skills</h2>
+        </div>
+      </section>
+      <div class="content pre-loader">
+        <div class="boxes shape">
+          <div class="box circle">
+            <div class="topic">Front-End</div>
+            <div class="green">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;95</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box circle">
+            <div class="topic">Animation</div>
+            <div class="green">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;95</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box circle">
+            <div class="topic">MobileApp</div>
+            <div class="orange">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;70</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="box circle">
+            <div class="topic">MobileApp</div>
+            <div class="red">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;70</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="boxes shape second">
+          <div class="box circle">
+            <div class="topic">Database</div>
+            <div class="green">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;85</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box circle">
+            <div class="topic">Back-end</div>
+            <div class="green">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;85</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box circle">
+            <div class="topic">Blockchain</div>
+            <div class="orange">
+              <div class="progress" style="background: transparent">
+                <div class="inner">
+                  <div class="percent"><span>&nbsp;&nbsp;75</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Services Section -->
+    <div class="portfolio-container" style="position: relative; z-index: 2">
+      <div id="services" style="margin-top: -100px; height: 100px"></div>
+      <h2 class="services" data-text="SERVICES">SERVICES</h2>
+      <div class="portfolio">
+        <div class="portfolio-item">
+          <div class="item-desc">
+            <h2 class="animate one">
+              <span>W</span><span>e</span><span>b</span><span>&nbsp;</span
+              ><span>D</span><span>e</span><span>v</span><span>e</span
+              ><span>l</span><span>o</span><span>p</span><span>m</span
+              ><span>e</span><span>n</span><span>t</span>
+            </h2>
+            <p>
+              9 years of experience in Web development. <br />
+              ✅ Frontend - Strong HTML + CSS + javascript, SCSS, Tailwind CSS,
+              TypeScript<br />
+              - React, Redux(toolkit), React Hooks, Next, React Native<br />
+              - Responsive Web design<br />
+              ✅ Backend - Node.js, express, hapi, Nest<br />
+              - Apollo, GraphQL, Firebase<br />
+              - MongoDB, mongoose, postgreSQL, MySQL<br />
+              - codeigniter, Laravel<br />
+              ✅ Other Software - Chrome extension, bot development with NodeJS
+              and Python<br />
+              - Restful, API integration, headless<br />
+              - Socket programming, socket.io, websocket<br />
+              - AWS services, Git, Bitbucket<br />
+              - Jira, Agile
+            </p>
+            <a onClick="showWork('website')" title="Website Development"
+              >View Work</a
+            >
+          </div>
+
+          <div class="item-card">
+            <div>
+              <picture>
+                <img
+                  class="lazy"
+                  data-src="./assets/images/coding.png"
+                  alt="mushroom"
+                  style="
+                    max-width: 400px;
+                    max-height: 200px;
+                    width: 80vw;
+                    height: 40vw;
+                  "
+                />
+              </picture>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-desc">
+            <h2 class="animate two">
+              <span>W</span><span>e</span><span>b</span><span>&nbsp;</span
+              ><span>A</span><span>n</span><span>i</span><span>m</span
+              ><span>a</span><span>t</span><span>i</span><span>o</span
+              ><span>n</span><span>s</span>
+            </h2>
+            <p>
+              😎I'm very proficient in Web Animation development as I have got
+              an artistic eye for design.<br />
+              ⚰️ Pure CSS animation<br />
+              ⚰️ 3D Animation with Three.js and WebGL<br />
+              ⚰️ Graphic animation with Canvas<br />
+              ⚰️ SVG graphic animation design<br />
+              ⚰️ parallx scroll animation<br />
+              ⚰️ ParticlesJS, GreenSockJS and so on.
+            </p>
+            <a onClick="showWork('animation')" title="Web Animations"
+              >View Work</a
+            >
+          </div>
+
+          <div class="item-card">
+            <div>
+              <picture>
+                <img
+                  class="lazy"
+                  data-src="./assets/images/video.png"
+                  alt="mushroom"
+                  style="
+                    max-width: 400px;
+                    max-height: 200px;
+                    width: 80vw;
+                    height: 40vw;
+                  "
+                />
+              </picture>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-desc">
+            <h2 class="animate three">
+              <span>B</span><span>l</span><span>o</span><span>c</span
+              ><span>k</span><span>c</span><span>h</span><span>a</span
+              ><span>i</span><span>n</span><span>&nbsp;</span> <span>D</span
+              ><span>e</span><span>v</span><span>e</span><span>l</span
+              ><span>o</span><span>p</span><span>m</span><span>e</span
+              ><span>n</span><span>t</span>
+            </h2>
+            <p>
+              😎I have been working as a Blockchain developer for 4 years.<br />
+              Mostly work as a Blockchain Fronend Developer.<br />
+              ⚰️ React + Web3JS, React + EthersJS<br />
+              ⚰️ Smart Contract, Solidity, Rust<br />
+              ⚰️ Ethereum, Solana<br />
+              ⚰️ NFT mint, NFT marketplace<br />
+              ⚰️ Discord & Telegram NFT Bot<br />
+              ⚰️ Binance, Cryptocurrency<br />
+            </p>
+            <a onClick="showWork('blockchain')" title="Blockchain Development"
+              >View Work</a
+            >
+          </div>
+
+          <div class="item-card">
+            <div>
+              <picture>
+                <img
+                  class="lazy"
+                  data-src="./assets/images/webdesign.png"
+                  alt="mushroom"
+                  style="
+                    max-width: 400px;
+                    max-height: 200px;
+                    width: 80vw;
+                    height: 40vw;
+                  "
+                />
+              </picture>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Pricing -->
+    <h2 class="title" style="position: relative; z-index: 2">
+      <div id="prices" style="margin-top: -100px; height: 100px"></div>
+      <span class="title-word title-word-1">My</span>
+      <span class="title-word title-word-2">Hourly</span>
+      <span class="title-word title-word-3">Rates</span>
+    </h2>
+    <div
+      class="container mt-5"
+      style="position: relative; z-index: 2; opacity: 0.9"
+    >
+      <div class="row mt-5">
+        <div class="col-md-4 mt-5">
+          <div class="content-inner fl-wrap">
+            <div class="content-front">
+              <div class="cf-inner">
+                <div
+                  class="bg"
+                  style="background-image: url(./assets/images/frontend.png)"
+                ></div>
+                <div class="overlay"></div>
+                <div class="inner">
+                  <h2>UI / UX Development</h2>
+                  <ul>
+                    <li>FrontEnd</li>
+                    <li>3D animation</li>
+                    <li>Web3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-back">
+              <div class="cf-inner">
+                <div class="inner">
+                  <div class="dec-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      id="Capa_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 487.16 487.16"
+                      style="enable-background: new 0 0 487.16 487.16"
+                      xml:space="preserve"
+                      width="50%"
+                      height="100%"
+                      class=""
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M243.578,291.482c-13.117,0-23.788,10.67-23.788,23.786c0,13.117,10.671,23.788,23.788,23.788   c13.116,0,23.787-10.671,23.787-23.788C267.365,302.152,256.694,291.482,243.578,291.482z M243.578,330.556   c-8.43,0-15.288-6.858-15.288-15.288c0-8.429,6.858-15.286,15.288-15.286c8.43,0,15.287,6.857,15.287,15.286   C258.865,323.697,252.008,330.556,243.578,330.556z"
+                            data-original="#000000"
+                            class="active-path"
+                            style="fill: #04bbd6"
+                            data-old_color="#000000"
+                          ></path>
+                          <path
+                            d="M453.606,5.261H33.555C15.053,5.261,0,20.315,0,38.817v301.728c0,18.502,15.053,33.556,33.555,33.556h147.497   l-17.482,58.059h-1.958c-14.255,0-25.852,11.599-25.852,25.855v19.635c0,2.347,1.903,4.25,4.25,4.25h207.144   c2.348,0,4.25-1.903,4.25-4.25v-19.635c0-14.257-11.6-25.855-25.856-25.855h-1.957l-17.482-58.059h147.499   c18.502,0,33.555-15.053,33.555-33.556V38.817C487.16,20.315,472.107,5.261,453.606,5.261z M33.555,13.761h420.051   c13.815,0,25.055,11.24,25.055,25.057v1.169h-88.353c-2.348,0-4.25,1.903-4.25,4.25c0,2.347,1.902,4.25,4.25,4.25h88.353v222.043   H8.5v-27.803h170.318c2.347,0,4.25-1.903,4.25-4.25s-1.903-4.25-4.25-4.25H8.5V38.817C8.5,25.001,19.74,13.761,33.555,13.761z    M342.902,458.015v15.385H144.258v-15.385c0-9.57,7.784-17.355,17.352-17.355h163.936   C335.116,440.659,342.902,448.445,342.902,458.015z M314.712,432.159H172.446l17.482-58.059H297.23L314.712,432.159z    M453.606,365.601H33.555c-13.815,0-25.055-11.24-25.055-25.056v-30.429h75.037c2.347,0,4.25-1.903,4.25-4.25   c0-2.347-1.903-4.25-4.25-4.25H8.5v-22.587h470.16v61.516C478.66,354.361,467.421,365.601,453.606,365.601z"
+                            data-original="#000000"
+                            class="active-path"
+                            style="fill: #04bbd6"
+                            data-old_color="#000000"
+                          ></path>
+                          <path
+                            d="M351.617,154.194l-47.873,35.994c-5.254,3.95-6.315,11.438-2.365,16.691l5.866,7.803c2.236,2.973,5.804,4.749,9.544,4.749   c2.602,0,5.074-0.824,7.148-2.384l74.561-56.06c2.685-2.019,4.224-4.938,4.224-8.007c0-3.069-1.54-5.987-4.225-8.005l-74.56-56.059   c-2.074-1.56-4.547-2.384-7.148-2.384c-3.739,0-7.307,1.775-9.542,4.748l-5.868,7.803c-3.949,5.253-2.889,12.741,2.365,16.692   l47.873,35.994c0.529,0.398,0.833,0.84,0.833,1.212C352.45,153.354,352.147,153.796,351.617,154.194z M356.725,144.974   l-47.872-35.994c-1.508-1.134-1.813-3.283-0.68-4.79l5.868-7.804c0.647-0.862,1.65-1.356,2.748-1.356   c0.52,0,1.295,0.118,2.041,0.678l74.559,56.059c0.529,0.398,0.833,0.84,0.833,1.213c0,0.373-0.304,0.815-0.832,1.213l-74.56,56.059   c-0.746,0.561-1.521,0.678-2.041,0.678c-1.1,0-2.102-0.495-2.749-1.357l-5.866-7.803c-1.134-1.508-0.829-3.656,0.678-4.789   l47.874-35.995c2.685-2.02,4.225-4.938,4.225-8.008C360.949,149.911,359.409,146.993,356.725,144.974z"
+                            data-original="#000000"
+                            class="active-path"
+                            style="fill: #04bbd6"
+                            data-old_color="#000000"
+                          ></path>
+                          <path
+                            d="M88.664,160.988l74.559,56.059c2.075,1.56,4.546,2.384,7.148,2.384c3.74,0,7.307-1.775,9.542-4.749l5.867-7.803   c3.95-5.253,2.889-12.741-2.364-16.691l-47.872-35.994c-0.53-0.398-0.833-0.841-0.833-1.214c0-0.373,0.304-0.814,0.833-1.212   l47.873-35.995c5.253-3.951,6.313-11.438,2.363-16.691l-5.867-7.803c-2.236-2.974-5.803-4.748-9.543-4.748   c-2.602,0-5.074,0.824-7.149,2.384l-74.558,56.059c-2.685,2.019-4.225,4.937-4.225,8.005   C84.438,156.049,85.978,158.968,88.664,160.988z M93.772,151.768l74.558-56.06c0.746-0.561,1.521-0.678,2.04-0.678   c1.099,0,2.101,0.495,2.749,1.357l5.867,7.802c1.133,1.508,0.829,3.657-0.678,4.791l-47.873,35.994   c-2.685,2.019-4.224,4.937-4.225,8.005c0,3.07,1.54,5.988,4.225,8.008l47.873,35.995c1.507,1.133,1.812,3.281,0.678,4.789   l-5.867,7.803c-0.648,0.862-1.65,1.357-2.749,1.357c-0.52,0-1.295-0.118-2.041-0.678l-74.558-56.058   c-0.53-0.398-0.834-0.841-0.834-1.214C92.939,152.608,93.242,152.166,93.772,151.768z"
+                            data-original="#000000"
+                            class="active-path"
+                            style="fill: #04bbd6"
+                            data-old_color="#000000"
+                          ></path>
+                          <path
+                            d="M210.549,213.968l8.89,4.033c1.552,0.705,3.202,1.062,4.903,1.062c4.681,0,8.951-2.744,10.877-6.991l47.322-104.297   c2.716-5.985,0.056-13.064-5.93-15.78l-8.891-4.034c-1.552-0.705-3.201-1.062-4.902-1.062c-4.681,0-8.951,2.745-10.878,6.992   l-47.321,104.296c-1.312,2.892-1.417,6.129-0.295,9.115C205.446,210.288,207.657,212.656,210.549,213.968z M212.359,201.698   l47.321-104.296c0.553-1.217,1.784-2.004,3.138-2.004c0.481,0,0.949,0.102,1.391,0.302l8.891,4.034   c0.824,0.374,1.456,1.054,1.779,1.915c0.323,0.861,0.296,1.789-0.078,2.613L227.479,208.56c-0.552,1.217-1.783,2.003-3.136,2.003   c-0.481,0-0.95-0.102-1.392-0.302l-8.89-4.033c-0.824-0.374-1.456-1.054-1.779-1.915   C211.957,203.451,211.985,202.523,212.359,201.698z"
+                            data-original="#000000"
+                            class="active-path"
+                            style="fill: #04bbd6"
+                            data-old_color="#000000"
+                          ></path>
+                          <path
+                            d="M306.313,48.486h61.496c2.348,0,4.25-1.903,4.25-4.25c0-2.347-1.902-4.25-4.25-4.25h-61.496c-2.348,0-4.25,1.903-4.25,4.25   C302.063,46.584,303.965,48.486,306.313,48.486z"
+                            data-original="#000000"
+                            class="active-path"
+                            style="fill: #04bbd6"
+                            data-old_color="#000000"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <p>
+                    Web & Mobile Frontend Development, Smart Contract ABI
+                    integration, 2D & 3D Animation Development
+                  </p>
+                  <div class="serv-price-wrap">$25 - $35</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="content-inner fl-wrap">
+            <div class="content-front">
+              <div class="cf-inner">
+                <div
+                  class="bg"
+                  style="background-image: url(./assets/images/backend.png)"
+                ></div>
+                <div class="overlay"></div>
+                <div class="inner">
+                  <h2>Backend Development</h2>
+                  <ul>
+                    <li>Backend API</li>
+                    <li>DB design</li>
+                    <li>Bot Development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-back">
+              <div class="cf-inner">
+                <div class="inner">
+                  <div class="dec-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      id="Capa_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 488.477 488.477"
+                      style="enable-background: new 0 0 488.477 488.477"
+                      xml:space="preserve"
+                      width="50%"
+                      height="100%"
+                      class=""
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M472.227,17.875H16.25C7.29,17.875,0,25.166,0,34.125v383.982c0,8.96,7.29,16.25,16.25,16.25h177.048v28.725   c0,5.155,2.583,6.761,4.124,7.259c1.541,0.497,4.575,0.709,7.594-3.473l38.649-53.547c0.29-0.402,0.526-0.524,0.563-0.536   c0.059,0.012,0.295,0.134,0.585,0.536l38.65,53.548c2.158,2.987,4.323,3.732,5.945,3.732c0.647,0,1.208-0.119,1.648-0.261   c1.54-0.498,4.123-2.103,4.123-7.259v-28.725h177.048c8.96,0,16.25-7.29,16.25-16.25V34.125   C488.477,25.166,481.187,17.875,472.227,17.875z M207.78,354.371c-1.082,0-2.05-0.144-2.959-0.438   c-5.369-1.744-9.069-8.495-12.987-15.644c-3.437-6.271-6.991-12.755-12.289-16.61c-5.372-3.909-12.697-5.311-19.781-6.667   c-7.943-1.52-15.445-2.956-18.702-7.431c-3.2-4.398-2.266-11.925-1.277-19.893c0.893-7.201,1.817-14.646-0.26-21.045   c-1.985-6.115-6.995-11.43-11.839-16.569c-5.395-5.724-10.972-11.642-10.972-17.457c0-5.816,5.578-11.734,10.973-17.458   c4.844-5.14,9.853-10.454,11.838-16.568c2.077-6.398,1.153-13.844,0.26-21.045c-0.989-7.968-1.922-15.494,1.278-19.892   c3.256-4.475,10.758-5.911,18.701-7.432c7.084-1.356,14.409-2.758,19.782-6.668c5.296-3.855,8.85-10.339,12.287-16.609   c3.917-7.147,7.618-13.899,12.988-15.643c0.909-0.295,1.877-0.438,2.959-0.438c4.615,0,10.163,2.597,16.035,5.346   c6.657,3.116,13.541,6.338,20.422,6.338c6.881,0,13.765-3.222,20.422-6.338c5.874-2.749,11.421-5.346,16.036-5.346   c1.082,0,2.05,0.144,2.958,0.438c5.37,1.744,9.07,8.495,12.988,15.643c3.437,6.271,6.991,12.755,12.288,16.61   c5.372,3.909,12.698,5.312,19.782,6.668c7.942,1.52,15.444,2.956,18.701,7.432c3.2,4.397,2.267,11.924,1.278,19.892   c-0.893,7.2-1.817,14.646,0.26,21.044c1.985,6.114,6.995,11.429,11.839,16.568c5.395,5.724,10.973,11.643,10.973,17.458   c0,5.817-5.579,11.736-10.974,17.46c-4.843,5.139-9.852,10.453-11.838,16.566c-2.077,6.398-1.153,13.844-0.259,21.044   c0.989,7.969,1.923,15.496-1.278,19.894c-3.256,4.475-10.758,5.911-18.7,7.431c-7.085,1.356-14.411,2.759-19.783,6.668   c-5.297,3.855-8.851,10.339-12.288,16.609c-3.918,7.148-7.619,13.899-12.988,15.644c-0.909,0.295-1.877,0.438-2.959,0.438   c-4.615,0-10.162-2.597-16.035-5.346c-6.657-3.116-13.541-6.338-20.423-6.338c-6.881,0-13.764,3.222-20.421,6.338   C217.943,351.774,212.395,354.371,207.78,354.371z M295.179,356.022c3.526-3.832,6.252-8.783,8.918-13.648   c2.988-5.45,6.077-11.087,9.836-13.822c3.836-2.791,10.212-4.012,16.379-5.192c9.214-1.764,18.743-3.587,23.975-10.777   c5.176-7.113,3.989-16.686,2.84-25.942c-0.779-6.278-1.584-12.772-0.091-17.372c1.396-4.298,5.546-8.7,9.939-13.361   c6.533-6.931,13.288-14.098,13.288-23.29c0-9.189-6.755-16.356-13.287-23.288c-4.394-4.661-8.544-9.064-9.94-13.363   c-1.494-4.602-0.688-11.094,0.091-17.372c1.149-9.256,2.336-18.827-2.84-25.94c-5.233-7.191-14.762-9.015-23.976-10.778   c-6.167-1.181-12.543-2.401-16.378-5.192c-3.76-2.736-6.849-8.372-9.836-13.823c-4.542-8.286-9.239-16.855-17.817-19.641   c-1.745-0.567-3.623-0.854-5.583-0.854c-6.506,0-13.183,3.125-19.639,6.147c-5.816,2.722-11.829,5.536-16.819,5.536   s-11.003-2.814-16.818-5.536c-6.457-3.022-13.133-6.147-19.639-6.147c-1.96,0-3.839,0.287-5.584,0.854   c-8.578,2.784-13.274,11.354-17.817,19.642c-2.987,5.45-6.076,11.086-9.835,13.822c-3.835,2.791-10.212,4.011-16.378,5.191   c-9.215,1.764-18.743,3.588-23.976,10.778c-5.176,7.113-3.989,16.685-2.84,25.94c0.779,6.279,1.585,12.771,0.09,17.373   c-1.396,4.299-5.545,8.702-9.939,13.363c-6.532,6.931-13.287,14.098-13.287,23.288c0,9.19,6.754,16.356,13.286,23.287   c4.394,4.661,8.544,9.064,9.94,13.364c1.494,4.602,0.688,11.094-0.09,17.373c-1.148,9.256-2.336,18.827,2.839,25.94   c5.233,7.191,14.762,9.015,23.977,10.778c6.167,1.181,12.543,2.4,16.378,5.191c3.759,2.735,6.849,8.372,9.836,13.823   c2.666,4.864,5.392,9.816,8.917,13.648v37.161H8.5V131.696h82.343c2.347,0,4.25-1.902,4.25-4.25c0-2.348-1.903-4.25-4.25-4.25H8.5   V84.683h471.477v269.513h-98.134c-2.347,0-4.25,1.902-4.25,4.25c0,2.348,1.903,4.25,4.25,4.25h98.134v30.487H295.179V356.022z    M16.25,26.375h455.977c4.273,0,7.75,3.477,7.75,7.75v15.058H170.094c-2.347,0-4.25,1.902-4.25,4.25c0,2.348,1.903,4.25,4.25,4.25   h309.883v18.5H8.5V34.125C8.5,29.852,11.977,26.375,16.25,26.375z M16.25,425.857c-4.273,0-7.75-3.477-7.75-7.75v-16.424h184.798   v24.174H16.25z M251.704,408.346c-1.862-2.58-4.583-4.06-7.466-4.06c-2.882,0-5.604,1.48-7.466,4.06l-34.974,48.455v-94.936   c0.135,0.048,0.262,0.105,0.399,0.15c1.745,0.567,3.624,0.854,5.584,0.854c0.934,0,1.872-0.071,2.812-0.19v34.766   c0,2.348,1.903,4.25,4.25,4.25s4.25-1.902,4.25-4.25v-37.061c2.795-1.074,5.581-2.376,8.327-3.661   c5.815-2.722,11.828-5.536,16.818-5.536c4.991,0,11.004,2.815,16.819,5.536c6.457,3.022,13.133,6.147,19.639,6.147   c1.96,0,3.838-0.287,5.583-0.854c0.137-0.045,0.265-0.104,0.399-0.15v94.936L251.704,408.346z M472.227,425.857H295.179v-24.174   h184.798v16.424C479.977,422.38,476.5,425.857,472.227,425.857z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M38.094,66.683c8.409,0,15.25-6.841,15.25-15.25c0-8.409-6.841-15.25-15.25-15.25s-15.25,6.841-15.25,15.25   C22.844,59.842,29.685,66.683,38.094,66.683z M38.094,44.683c3.722,0,6.75,3.028,6.75,6.75c0,3.722-3.028,6.75-6.75,6.75   c-3.722,0-6.75-3.028-6.75-6.75C31.344,47.711,34.372,44.683,38.094,44.683z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M80.594,66.683c8.409,0,15.25-6.841,15.25-15.25c0-8.409-6.841-15.25-15.25-15.25s-15.25,6.841-15.25,15.25   C65.344,59.842,72.185,66.683,80.594,66.683z M80.594,44.683c3.722,0,6.75,3.028,6.75,6.75c0,3.722-3.028,6.75-6.75,6.75   c-3.722,0-6.75-3.028-6.75-6.75C73.844,47.711,76.872,44.683,80.594,44.683z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M123.094,66.683c8.409,0,15.25-6.841,15.25-15.25c0-8.409-6.841-15.25-15.25-15.25s-15.25,6.841-15.25,15.25   C107.844,59.842,114.685,66.683,123.094,66.683z M123.094,44.683c3.722,0,6.75,3.028,6.75,6.75c0,3.722-3.028,6.75-6.75,6.75   c-3.722,0-6.75-3.028-6.75-6.75C116.344,47.711,119.372,44.683,123.094,44.683z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M337.501,232.617c0-51.425-41.837-93.262-93.263-93.262s-93.263,41.837-93.263,93.262   c0,51.426,41.837,93.264,93.263,93.264S337.501,284.042,337.501,232.617z M159.476,232.617c0-46.737,38.024-84.762,84.763-84.762   s84.763,38.024,84.763,84.762c0,46.739-38.024,84.764-84.763,84.764S159.476,279.356,159.476,232.617z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M306.714,232.617c0-34.448-28.026-62.475-62.476-62.475s-62.476,28.026-62.476,62.475   c0,34.448,28.026,62.476,62.476,62.477C278.688,295.093,306.714,267.066,306.714,232.617z M200.149,263.696h33.693   c2.347,0,4.25-1.902,4.25-4.25c0-2.348-1.903-4.25-4.25-4.25h-38.612c-2.905-6.28-4.637-13.205-4.916-20.5h61.527   c2.347,0,4.25-1.902,4.25-4.25c0-2.348-1.903-4.25-4.25-4.25h-61.185c3.187-26.744,25.992-47.554,53.581-47.554   c16.215,0,30.772,7.197,40.675,18.554h-40.07c-2.347,0-4.25,1.902-4.25,4.25c0,2.348,1.903,4.25,4.25,4.25h46.148   c4.585,7.931,7.223,17.121,7.223,26.921c0,29.763-24.213,53.977-53.976,53.977C226.042,286.592,209.932,277.532,200.149,263.696z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <p>
+                    NodeJS Backend Development, Database Design and
+                    Optimization, Telegram & Discord Bot
+                  </p>
+                  <div class="serv-price-wrap">$30 - $45</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="content-inner fl-wrap">
+            <div class="content-front">
+              <div class="cf-inner">
+                <div
+                  class="bg"
+                  style="background-image: url(./assets/images/blockchain.png)"
+                ></div>
+                <div class="overlay"></div>
+                <div class="inner">
+                  <h2>Blockchain Development</h2>
+                  <ul>
+                    <li>Smart Contract</li>
+                    <li>NFT minting & marketplace</li>
+                    <li>NFT & Trading Bot</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-back">
+              <div class="cf-inner">
+                <div class="inner">
+                  <div class="dec-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      id="Capa_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 487.16 487.16"
+                      style="enable-background: new 0 0 487.16 487.16"
+                      xml:space="preserve"
+                      width="50%"
+                      height="100%"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M240.934,291.482c-13.116,0-23.787,10.671-23.787,23.787c0,13.116,10.671,23.787,23.787,23.787   c13.116,0,23.787-10.671,23.787-23.787C264.721,302.152,254.05,291.482,240.934,291.482z M240.934,330.556   c-8.43,0-15.287-6.857-15.287-15.287c0-8.43,6.857-15.287,15.287-15.287c8.43,0,15.287,6.857,15.287,15.287   C256.221,323.698,249.363,330.556,240.934,330.556z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M453.605,5.261H33.555C15.053,5.261,0,20.315,0,38.817v301.727c0,18.503,15.053,33.556,33.555,33.556h147.497   l-17.482,58.059h-1.96c-14.255,0-25.853,11.599-25.853,25.855v19.635c0,2.348,1.902,4.25,4.25,4.25h207.145   c2.348,0,4.25-1.902,4.25-4.25v-19.635c0-14.257-11.6-25.855-25.857-25.855h-1.956l-17.483-58.059h147.498   c18.502,0,33.555-15.053,33.555-33.556V38.817C487.16,20.315,472.107,5.261,453.605,5.261z M33.555,13.761h420.051   c13.815,0,25.055,11.24,25.055,25.057v1.169h-90.997c-2.348,0-4.25,1.902-4.25,4.25c0,2.348,1.902,4.25,4.25,4.25h90.997v222.043   H8.5v-8.803h170.689c2.348,0,4.25-1.902,4.25-4.25c0-2.348-1.902-4.25-4.25-4.25H8.5V38.817   C8.5,25.001,19.739,13.761,33.555,13.761z M342.902,458.015v15.385H144.258v-15.385c0-9.569,7.784-17.355,17.353-17.355h163.936   C335.116,440.659,342.902,448.445,342.902,458.015z M314.713,432.159H172.447l17.481-58.059H297.23L314.713,432.159z    M453.605,365.601H33.555c-13.815,0-25.055-11.24-25.055-25.056v-29.929h77.893c2.348,0,4.25-1.902,4.25-4.25   c0-2.348-1.902-4.25-4.25-4.25H8.5v-23.087h470.16v61.516C478.66,354.36,467.421,365.601,453.605,365.601z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M303.668,48.486h61.496c2.348,0,4.25-1.902,4.25-4.25c0-2.348-1.902-4.25-4.25-4.25h-61.496c-2.348,0-4.25,1.902-4.25,4.25   C299.418,46.584,301.32,48.486,303.668,48.486z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M72.581,118.591c18.196,0,33-14.804,33-33c0-6.51-1.902-12.579-5.169-17.698c6.516-2.948,20.938-8.394,38.964-8.59   c0.35-0.004,0.695-0.006,1.043-0.006c31.787,0,59.356,15.937,81.994,47.374l-29.161-6.479c-2.286-0.51-4.561,0.936-5.07,3.227   c-0.51,2.291,0.936,4.562,3.227,5.07l40.5,9c0.306,0.068,0.614,0.102,0.922,0.102c1.006,0,1.991-0.357,2.77-1.026   c1.016-0.873,1.561-2.173,1.471-3.51l-3-44.5c-0.157-2.341-2.16-4.113-4.526-3.954c-2.342,0.158-4.112,2.185-3.954,4.526   l2.043,30.3c-30.207-40.482-64.504-48.841-88.349-48.622c-21.802,0.237-38.592,7.428-44.542,10.356   c-5.862-5.322-13.64-8.569-22.161-8.569c-18.196,0-33,14.804-33,33C39.581,103.787,54.385,118.591,72.581,118.591z M72.581,61.091   c13.51,0,24.5,10.99,24.5,24.5c0,13.51-10.99,24.5-24.5,24.5c-13.51,0-24.5-10.99-24.5-24.5   C48.081,72.081,59.071,61.091,72.581,61.091z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M210.061,173.031c-1.016,0.873-1.561,2.173-1.471,3.51l3,44.5c0.151,2.244,2.018,3.964,4.236,3.964   c0.096,0,0.192-0.003,0.29-0.01c2.342-0.158,4.112-2.185,3.954-4.526l-2.059-30.538c29.454,37.853,62.269,46.16,85.372,46.16   c0.155,0,0.313,0,0.467-0.001c21.825-0.105,38.556-7.275,44.333-10.115c4.508,12.863,16.764,22.115,31.147,22.115   c18.196,0,33-14.804,33-33s-14.804-33-33-33c-18.196,0-33,14.804-33,33c0,0.758,0.035,1.506,0.086,2.251   c-0.086,0.041-0.175,0.066-0.259,0.113c-0.179,0.102-18.208,10.117-42.717,10.137c-0.025,0-0.05,0-0.075,0   c-30.775,0-57.66-15.017-80-44.642l29.043,6.454c2.293,0.514,4.563-0.935,5.07-3.227c0.51-2.291-0.935-4.562-3.226-5.07l-40.5-9   C212.448,171.816,211.077,172.158,210.061,173.031z M379.33,190.59c13.51,0,24.5,10.99,24.5,24.5c0,13.51-10.99,24.5-24.5,24.5   s-24.5-10.99-24.5-24.5C354.83,201.58,365.82,190.59,379.33,190.59z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                          <path
+                            d="M313.571,146.77c0.757,0.553,1.635,0.819,2.505,0.819c1.31,0,2.603-0.604,3.435-1.741l14.491-19.819l19.819,14.491   c0.757,0.553,1.635,0.819,2.505,0.819c1.31,0,2.603-0.604,3.435-1.741c1.386-1.896,0.973-4.554-0.922-5.939l-19.819-14.491   l14.491-19.819c1.386-1.896,0.973-4.554-0.922-5.939c-1.897-1.386-4.555-0.972-5.939,0.922l-14.491,19.819l-19.819-14.491   c-1.897-1.386-4.556-0.972-5.939,0.922c-1.386,1.896-0.973,4.554,0.922,5.939l19.819,14.491l-14.491,19.819   C311.264,142.727,311.677,145.385,313.571,146.77z"
+                            data-original="#000000"
+                            class="active-path"
+                            data-old_color="#000000"
+                            style="fill: #05c2de"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <p>
+                    Ethereum & Solana, Solidity and Rust, NFT minting &
+                    marketplace, Trading & NFT Bot
+                  </p>
+                  <div class="serv-price-wrap">$40 - $50</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Previous Works -->
+    <div
+      class="container"
+      style="position: relative; z-index: 2; margin-top: 100px"
+    >
+      <div id="myworks" style="margin-top: -100px; height: 100px"></div>
+      <div class="waviy">
+        <span style="--i: 1">P</span>
+        <span style="--i: 2">r</span>
+        <span style="--i: 3">e</span>
+        <span style="--i: 4">v</span>
+        <span style="--i: 5">i</span>
+        <span style="--i: 6">o</span>
+        <span style="--i: 7">u</span>
+        <span style="--i: 8">s</span>
+        <span style="--i: 9">&nbsp;</span>
+        <span style="--i: 10">W</span>
+        <span style="--i: 11">o</span>
+        <span style="--i: 12">r</span>
+        <span style="--i: 13">k</span>
+        <span style="--i: 14">s</span>
+      </div>
+    </div>
+    <div
+      class="filters filter-button-group"
+      style="position: relative; z-index: 2"
+    >
+      <ul>
+        <li class="active">
+          <a href="javascript:void(0);" data-filter="*" id="all">All</a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" data-filter="website" id="website"
+            >Website</a
+          >
+        </li>
+        <li>
+          <a href="javascript:void(0);" data-filter="animation" id="animation"
+            >Animation</a
+          >
+        </li>
+        <li>
+          <a href="javascript:void(0);" data-filter="blockchain" id="blockchain"
+            >Blockchain</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      id="container"
+      class="isotope"
+      style="position: relative; z-index: 2; opacity: 0.9"
+    >
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/accounting.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/accounting.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://www.accointing.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://www.accointing.com/"
+            >React + Next + TypeScript</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/bluejestic.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/bluejestic.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://bluejestic.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://bluejestic.com/"
+            >Next + TypeScript + TailwindCSS</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="blockchain">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/colexion.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/colexion.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://colexion.io/"
+            target="_blank"
+            class="imageLink"
+            title="https://colexion.io/"
+            >React + NodeJS + Web3</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="blockchain">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/everburn.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/everburn.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://everburn.io/"
+            target="_blank"
+            class="imageLink"
+            title="https://everburn.io/"
+            >React + Web3 + Solidity</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/graphicrhino.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/graphicrhino.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://graphicrhino.be"
+            target="_blank"
+            class="imageLink"
+            title="https://graphicrhino.be"
+            >React Hooks + SCSS</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/hugeinc.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/hugeinc.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://www.hugeinc.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://www.hugeinc.com/"
+            >MERN stack</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/mazda.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/mazda.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://www.mazda.com.au/"
+            target="_blank"
+            class="imageLink"
+            title="https://www.mazda.com.au/"
+            >React + Redux + SCSS</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="blockchain">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/mercafantasy.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/mercafantasy.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://mercafantasy.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://mercafantasy.com/"
+          >
+            ParticleJS + Web3</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/momnpop.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/momnpop.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://test.momnpophub.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://test.momnpophub.com/"
+            >MEAN stack</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="animation">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/motelycrowd.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/motelycrowd.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://www.motleycrowd.live/"
+            target="_blank"
+            class="imageLink"
+            title="https://www.motleycrowd.live/"
+            >React + Next + ThreeJS</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/patternbrands.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/patternbrands.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://www.patternbrands.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://www.patternbrands.com/"
+            >React + Styled Component</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="animation">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/shop_qcterme.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/shop_qcterme.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://shop.qcterme.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://shop.qcterme.com/"
+            >React + GSAP</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="blockchain">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/solsnatcher.png"
+          target="_blank"
+        >
+          <img
+            class="lazy"
+            data-src="./assets/images/portfolio/solsnatcher.png"
+          />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://solsnatchers.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://solsnatchers.com/"
+            >HTML + Bootstrap + JQuery</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="website">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/strv.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/strv.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://www.strv.com/"
+            target="_blank"
+            class="imageLink"
+            title="https://www.strv.com/"
+            >React + Next + Express</a
+          >
+        </div>
+      </div>
+      <div class="grid-item" data-filter="animation">
+        <a
+          class="popupimg"
+          href="./assets/images/portfolio/ueno.png"
+          target="_blank"
+        >
+          <img class="lazy" data-src="./assets/images/portfolio/ueno.png" />
+        </a>
+        <div class="_overlay">
+          <a
+            href="https://interview.ueno.co/"
+            target="_blank"
+            class="imageLink"
+            title="https://interview.ueno.co/"
+            >React + ThreeJS</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="isotope-pager"
+      style="
+        padding-top: 15px;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+      "
+    ></div>
+
+    <!-- POKEMON START -->
+    <main id="app">
+      <section class="cards">
+        <div class="card charizard animated"></div>
+        <div class="card pika animated"></div>
+        <div class="card eevee animated"></div>
+        <div class="card mewtwo animated"></div>
+      </section>
+      <style class="hover"></style>
+    </main>
+    <!-- POKEMON END -->
+
+    <!-- Contact Section -->
+    <div
+      class="w3-container w3-padding-large contact"
+      style="position: relative; z-index: 2"
+    >
+      <div id="contact" style="margin-top: -100px; height: 100px"></div>
+      <div id="container" style="display: flex">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values="1 0 0 0 0
+                                            0 1 0 0 0
+                                            0 0 1 0 0
+                                            0 0 0 255 -140"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <div
+        class="w3-row-padding w3-center w3-padding-24 w3-border w3-border-dark-grey"
+        style="margin: 0px; padding: 0px !important; margin-top: -50px"
+      >
+        <div class="w3-col l4 w3-dark-grey">
+          <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+          <p>
+            <a
+              href="mailTo: herlmercedes@gmail.com?Subject=I'd like to have a interview with you."
+              style="text-decoration: underline; color: white"
+              >herlmercedes@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="w3-col l4">
+          <p><i class="fa fa-clock-o w3-xxlarge w3-text-light-grey"></i></p>
+          <p>Full Time Availability</p>
+        </div>
+        <div class="w3-col l4 w3-dark-grey">
+          <p><i class="fa fa-github w3-xxlarge w3-text-light-grey"></i></p>
+          <p>
+            <a
+              href="https://github.com/wolf1994722"
+              target="_blank"
+              title="https://github.com/wolf1994722"
+              style="text-decoration: underline; color: white"
+            >
+              Git Hub
+            </a>
+          </p>
+        </div>
+        <div class="w3-col l4">
+          <p><i class="fa fa-telegram w3-xxlarge w3-text-light-grey"></i></p>
+          <p>
+            <a
+              href="https://t.me/topdevper"
+              target="_blank"
+              title="https://t.me/topdevper"
+              style="text-decoration: underline; color: white"
+            >
+              Telegram
+            </a>
+          </p>
+        </div>
+        <div class="w3-col l4 w3-dark-grey">
+          <p><i class="fa fa-skype w3-xxlarge w3-text-light-grey"></i></p>
+          <p>
+            <a
+              href="https://join.skype.com/invite/we6kvoczprTi"
+              target="_blank"
+              title="https://join.skype.com/invite/we6kvoczprTi"
+              style="text-decoration: underline; color: white"
+            >
+              Skype
+            </a>
+          </p>
+        </div>
+        <div class="w3-col l4">
+          <p>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="discord"
+              class="svg-inline--fa fa-discord"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              style="width: 45px"
+            >
+              <path
+                fill="currentColor"
+                d="M524.5 69.84a1.5 1.5 0 0 0 -.764-.7A485.1 485.1 0 0 0 404.1 32.03a1.816 
+                    1.816 0 0 0 -1.923 .91 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 
+                    -15.14-30.6 1.89 1.89 0 0 0 -1.924-.91A483.7 483.7 0 0 0 116.1 69.14a1.712 1.712 0 0 0 -.788 .676C39.07 
+                    183.7 18.19 294.7 28.43 404.4a2.016 2.016 0 0 0 .765 1.375A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 
+                    2.063-.676A348.2 348.2 0 0 0 208.1 430.4a1.86 1.86 0 0 0 -1.019-2.588 321.2 321.2 0 0 1 -45.87-21.85 
+                    1.885 1.885 0 0 1 -.185-3.126c3.082-2.309 6.166-4.711 9.109-7.137a1.819 1.819 0 0 1 1.9-.256c96.23 43.92 200.4 
+                    43.92 295.5 0a1.812 1.812 0 0 1 1.924 .233c2.944 2.426 6.027 4.851 9.132 7.16a1.884 1.884 0 0 1 -.162 
+                    3.126 301.4 301.4 0 0 1 -45.89 21.83 1.875 1.875 0 0 0 -1 2.611 391.1 391.1 0 0 0 30.01 48.81 1.864 1.864 
+                    0 0 0 2.063 .7A486 486 0 0 0 610.7 405.7a1.882 1.882 0 0 0 .765-1.352C623.7 277.6 590.9 167.5 524.5 
+                    69.84zM222.5 337.6c-28.97 0-52.84-26.59-52.84-59.24S193.1 219.1 222.5 219.1c29.67 0 53.31 26.82 52.84 
+                    59.24C275.3 310.1 251.9 337.6 222.5 337.6zm195.4 0c-28.97 0-52.84-26.59-52.84-59.24S388.4 219.1 417.9 
+                    219.1c29.67 0 53.31 26.82 52.84 59.24C470.7 310.1 447.5 337.6 417.9 337.6z"
+              ></path>
+            </svg>
+          </p>
+          <p>
+            <a
+              href="https://discord.com/channels/1183376161917653102/1183376162379018313"
+              target="_blank"
+              title="https://discord.com/channels/1183376161917653102/1183376162379018313"
+              style="text-decoration: underline; color: white"
+            >
+              Discord
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer" style="position: relative; z-index: 2">
+      <p class="contact-title">&copy; Last Updated On Jan 1 2024</p>
+    </div>
+
+    <!-- Button -->
+    <button class="scroll-btn" style="z-index: 10">
+      <span class="scroll-btn__sign">Scroll Down</span>
+      <span class="scroll-btn__arrow"></span>
+    </button>
+    <!-- /Button -->
+    <!-- ThreeJS Model -->
+    <!-- <div class="loading" id="js-loader"><div class="loader"></div></div>
+    <canvas id="c" style="background: transparent;"></canvas>   -->
+    <!-- /ThreeJS Model -->
+    <!-- Clouds and Starts -->
+    <div class="clouds" style="z-index: 1"></div>
+    <!-- /Clouds and Starts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="./assets/js/hero.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
+    <script src="./assets/js/scrollBtn.js"></script>
+    <script src="./assets/js/threemodel.js"></script>
+    <script src="./assets/js/pricing.js"></script>
+    <script src="./assets/js/pokemon.js"></script>
+  </body>
+</html>
