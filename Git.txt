@@ -1,0 +1,45 @@
+git checkout -b feature/serverMangement
+
+git switch feature/serverMangement
+
+git pull
+
+git add .
+
+git commit -m "aajdkjfjdkjfkfjfjfjfj"
+
+git push
+
+git pull
+
+
+-----------------------------------------Fack Github create------------------------------------------------
+npx fake-git-history --commitsPerDay "0,3" --workdaysOnly --startDate "2022/1/12" --endDate "2022/12/27"
+cd .\my-history\
+git remote add origin https://github.com/wolf1994722/2022.git
+git push -u origin master
+
+---
+git log
+
+git filter-branch -f --commit-filter '
+    # check to see if the committer (email is the desired one)
+
+            # Set the new desired name
+            GIT_COMMITTER_NAME="awesome1115";
+            GIT_AUTHOR_NAME="wolf1994722";
+
+            # Set the new desired email
+            GIT_COMMITTER_EMAIL="arvidjohansson413@gmail.com";
+            GIT_AUTHOR_EMAIL="herlmercedes@gmail.com";
+  
+            # No need to update so commit as is
+            git commit-tree "$@";'
+HEAD
+
+git checkout -b "main"
+
+git remote set-url origin https://github.com/harry908nilson/react-redux.git
+
+git push origin main
+---------------------------------------------------------------
