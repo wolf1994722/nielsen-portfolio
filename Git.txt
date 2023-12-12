@@ -43,3 +43,10 @@ git remote set-url origin https://github.com/harry908nilson/react-redux.git
 
 git push origin main
 ---------------------------------------------------------------
+git pull origin main
+
+git add .
+git commit -m "fixed/any function"
+git push
+git push --set-upstearm origin main
+git push
